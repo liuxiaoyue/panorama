@@ -196,15 +196,15 @@ $(document).ready(function(){
     //请求接口,获取纹理图
     // var getTextures = setInterval(function(){
     //     $.ajax({
-    //         url : '',
-    //         dataType : 'jsonp',
+    //         url : '/panorama/front?id=' + CONFIG.id,
+    //         dataType : 'json',
     //         success : function(res){
     //             if(res.list ===  6){
     //                 clearInterval('getTextures');
-    //                 CONFIG.list = res.list;
     //                 //确保6张图完全加载完成
+    //                 loadTextturesComplete(res.list);
     //             }
     //         }
-    //     })
+    //     });
     // });
 });
