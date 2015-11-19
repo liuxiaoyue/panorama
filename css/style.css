@@ -1,0 +1,57 @@
+/* RESET */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {margin:0;padding:0}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th {font-size: 1em;font-weight: normal;font-style: normal}
+strong{ font-weight:bold}
+ul, ol {list-style: none}
+fieldset, img {border: none}
+caption, th {text-align: left}
+table { border-collapse: collapse; border-spacing:0}
+body{ background:#fff; color:#333; font:12px/18px "Lucida Grande","Lucida Sans Unicode",Arial,HELVETICA;overflow:hidden;}
+input,select,textarea{ font-family:"Lucida Grande", "Lucida Sans Unicode",  Arial, Verdana, sans-serif; font-size:12px}
+a {	color: #333; outline:none}
+a:link, a:visited, a:active {text-decoration: none}
+a:hover {text-decoration: underline;color:#2a609f}
+i,cite,em{font-style:normal}
+.wrap{width:990px; margin:0 auto; position:relative}
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0}
+.clearfix {display: block}
+html[xmlns] .clearfix {display: block}
+* html .clearfix {height: 1%}
+::-webkit-input-placeholder {color:#87806d;}
+html,body {width:100%;height:100%;overflow:hidden;}
+
+#main {width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0;}
+#main>section {width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0;display:none;}
+#main>section>article {width:100%;height:100%;position:absolute;}
+#main>section:first-child {top:0;left:0;z-index:11;display:block;}
+
+
+.page_2 .btn_box {width:1302px;height:1302px;}
+/*.page_2 .shu {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/shu.png") no-repeat;width:146px;height:99px;position:absolute;left:0;bottom:0;-webkit-transform:perspective(100px) rotateX(0deg) rotateZ(-380deg) rotateY(6deg) scaleX(1.9) scaleY(1.3) skew(-14deg);-webkit-transform-origin:0 100%;display:none;}*/
+/*.page_2 .btn_box .shu {background:url("../shu.png") no-repeat;width:146px;height:99px;position:absolute;left:0;bottom:0;-webkit-transform:rotate(-20deg) skew(-20deg) scaleX(1.4) scaleY(1.1);-webkit-transform-origin:0 100%;display:none;}*/
+.page_2 .btn_box .chuang {background:url("chuang.png") no-repeat;width:252px;height:163px;position:absolute;right:240px;bottom:70px;display:none;}
+.page_2 .btn_box .chuang .yes {width:58%;height:100%;position:absolute;left:0;bottom:0;}
+.page_2 .btn_box .chuang .no {width:42%;height:100%;position:absolute;right:0;bottom:0;}
+/*.page_2 .huace {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/huace.png") no-repeat;width:176px;height:107px;position:absolute;right:0;bottom:10px;-webkit-transform:perspective(100px) rotateY(-4deg) rotateZ(23deg) skew(25deg) scaleX(1.7) scaleY(1.2);-webkit-transform-origin:100% 100%;display:none;}*/
+.page_2 .btn_box .huace {background:url("huace.png") no-repeat;width:270px;height:131px;position:absolute;right:200px;bottom:10px;-webkit-transform:rotate(20deg) skew(20deg);-webkit-transform-origin:100% 100%;display:none;}
+.page_2 .btn_box .qiuxie {width:192px;height:108px;position:absolute;bottom:300px;left:530px;background:url("../img/qiuxie.png") no-repeat;display:none;}
+/*.page_2 .erji {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/erji.png") no-repeat;width:228px;height:34px;position:absolute;bottom:124px;right:52px;-webkit-transform:perspective(100px) rotateY(-5deg) rotateZ(19deg) skew(17deg) scaleX(1.4) scaleY(1.2);}*/
+.page_2 .btn_box .erji {background:url("erji.png") no-repeat;width:228px;height:34px;position:absolute;bottom:124px;right:52px;-webkit-transform:rotate(20deg) skew(20deg)scaleX(1.4) scaleY(1.1);}
+.page_2 .btn_box .gouwo {background:url("gouwo.png") no-repeat;width:232px;height:130px;position:absolute;bottom:130px;left:390px;display:none;}
+
+.page_2 .tips {background:url("../img/tips.png") no-repeat;background-size:100% 100%;width:2.71rem;height:1.27rem;position:absolute;left:50%;top:50%;margin-left:-1.36rem;margin-top:-0.64rem;}
+/*.page_2 .bg {-webkit-animation:opacity 4s linear infinite alternate;}*/
+.page_2 .animate {display:block;-webkit-animation:opacity_text 1s step-start;}
+.page_2 img {display:none;}
+
+.page_2 .cover {width:100%;height:100%;position:absolute;left:0;top:0;background:rgba(0,0,0,0.8);display:none;}
+/*.page_2 .qiuxie_cover {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_line.png") no-repeat;background-size:100% 100%;width:6.4rem;height:5.51rem;position:absolute;bottom:1.3rem;left:0;display:none;}*/
+.page_2 .qiuxie_cover {width:6.4rem;height:5.51rem;position:absolute;bottom:1.3rem;left:0;display:none;}
+.page_2 .qiuxie_cover .bg {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_line.png") no-repeat;background-size:100% 100%;width:100%;height:100%;position:absolute;left:0;top:0;}
+.page_2 .qiuxie_cover .box {width:4.41rem;height:3.61rem;position:absolute;left:1.26rem;bottom:0.68rem;}
+.page_2 .qiuxie_cover .box .step_0 {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_0.png") left no-repeat;background-size:0.45rem 1.23rem;width:0.45rem;height:1.23rem;position:absolute;left:0.7rem;bottom:0;}
+.page_2 .qiuxie_cover .box .step_1 {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_1.png") right no-repeat;background-size:1.15rem 2.57rem;width:1.15rem;height:2.57rem;position:absolute;right:3.26rem;bottom:0.2rem;}
+.page_2 .qiuxie_cover .box .step_2 {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_2.png") left no-repeat;background-size:4.41rem 2.69rem;width:4.41rem;height:2.69rem;position:absolute;left:0;bottom:0.53rem;}
+.page_2 .qiuxie_cover .box .step_3 {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_3.png") bottom no-repeat;background-size:0.8rem 0.52rem;width:0.8rem;height:0.52rem;position:absolute;left:2.85rem;bottom:3.1rem;overflow:hidden;}
+.page_2 .qiuxie_cover .box .text {font-size:0.26rem;line-height:0.26rem;width:3rem;height:0.26rem;color:#fff;font-family:"zzgf";position:absolute;right:0;bottom:0.4rem;-webkit-transform:rotate(-4deg) skew(-4deg);}
+.page_2 .qiuxie_cover .box .close {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/close.png") no-repeat;background-size:100% 100%;width:0.2rem;height:0.2rem;position:absolute;left:0.28rem;top:0.18rem;}
