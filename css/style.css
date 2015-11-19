@@ -55,3 +55,7 @@ html,body {width:100%;height:100%;overflow:hidden;}
 .page_2 .qiuxie_cover .box .step_3 {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/cover_qiuxie_3.png") bottom no-repeat;background-size:0.8rem 0.52rem;width:0.8rem;height:0.52rem;position:absolute;left:2.85rem;bottom:3.1rem;overflow:hidden;}
 .page_2 .qiuxie_cover .box .text {font-size:0.26rem;line-height:0.26rem;width:3rem;height:0.26rem;color:#fff;font-family:"zzgf";position:absolute;right:0;bottom:0.4rem;-webkit-transform:rotate(-4deg) skew(-4deg);}
 .page_2 .qiuxie_cover .box .close {background:url("http://img.wmy-ad.com/toutiao/20151024/img/page_2/close.png") no-repeat;background-size:100% 100%;width:0.2rem;height:0.2rem;position:absolute;left:0.28rem;top:0.18rem;}
+
+.loading {
+	width:2.81rem;height:1.27rem;position:absolute;left:50%;top:50%;margin-left:-1.36rem;margin-top:-0.64rem;
+}
