@@ -26,7 +26,7 @@ $(document).ready(function(){
             scene = new THREE.Scene();
 
             //创建物体
-            var cube = generateCubeMap(650);
+            var cube = generateCubeMap(487);
 
             //将物体添加到场景中
             scene.add( cube );
@@ -60,32 +60,32 @@ $(document).ready(function(){
             //纹理贴图数据
             var sides = [
                 {
-                    url: './textures/2_2.jpg',
+                    url: CONFIG.list[2],
                     position: [ - tileWidth, 0, 0 ],
                     rotation: [ 0, rightAngle, 0 ]
                 },
                 {
-                    url: './textures/2_4.jpg',
+                    url: CONFIG.list[4],
                     position: [ tileWidth, 0, 0 ],
                     rotation: [ 0, - rightAngle, 0 ]
                 },
                 {
-                    url: './textures/2_0.jpg',
+                    url: CONFIG.list[0],
                     position: [ 0, tileWidth, 0 ],
                     rotation: [ rightAngle, 0, flipAngle*(1/2)]
                 },
                 {
-                    url: './textures/2_5.jpg',
+                    url: CONFIG.list[5],
                     position: [ 0, - tileWidth, 0 ],
                     rotation: [ -rightAngle, 0, flipAngle*(1/2) ]
                 },
                 {
-                    url: './textures/2_1.jpg',
+                    url: CONFIG.list[1],
                     position: [ 0, 0, tileWidth ],
                     rotation: [ 0, flipAngle, 0 ]
                 },
                 {
-                    url: './textures/2_3.jpg',
+                    url : CONFIG.list[3],
                     position: [ 0, 0, - tileWidth ],
                     rotation: [ 0, 0, 0 ]
                 }
@@ -191,20 +191,27 @@ $(document).ready(function(){
     }
     setHtmlSize();
     loading.show();
-    loadTextturesComplete(CONFIG.list);
+    // loadTextturesComplete(CONFIG.list);
 
     //请求接口,获取纹理图
-    // var getTextures = setInterval(function(){
-    //     $.ajax({
-    //         url : '/panorama/front?id=' + CONFIG.id,
-    //         dataType : 'json',
-    //         success : function(res){
-    //             if(res.list ===  6){
-    //                 clearInterval('getTextures');
-    //                 //确保6张图完全加载完成
-    //                 loadTextturesComplete(res.list);
-    //             }
-    //         }
-    //     });
-    // });
+    var query = window.location.search;
+    var list = query.split('=');
+    if(list[1]){
+        $.ajax({
+            url : 'http://10.58.105.250:3000/panorama/front?id=' + list[1],
+            dataType : 'json',
+            success : function(res){
+                if(res && res.photos && res.photos.length === 6){
+                    var data = [];
+                    res.photos.forEach(function(item){
+                        data.push('http://10.58.105.250:3000' + item);
+                    });
+                    loadTextturesComplete(data);
+                    CONFIG.list = data;
+                }
+            }
+        });
+    }
+
+    
 });
